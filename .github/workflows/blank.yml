@@ -56,4 +56,6 @@ jobs:
 
       # Run the tests
       - name: Run Mobile Tests
-        run: mvn clean test
+        run: |
+          adb devices
+          mvn clean test
