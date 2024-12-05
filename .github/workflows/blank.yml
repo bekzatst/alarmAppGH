@@ -40,18 +40,14 @@ jobs:
           appium plugin install images
           appium &
 
-      # Start an Android Emulator
-      - name: Android Emulator Runner
+      # Start an Android Emulator and Run Tests
+      - name: Android Emulator Runner and Run Tests
         uses: ReactiveCircus/android-emulator-runner@v2.33.0
         with:
           api-level: 33
           profile: 'Nexus 6'
           target: google_apis
           arch: x86_64
-          script: 'adb install src/test/resources/apps/base.apk'
-
-      # Run the tests
-      - name: Run Mobile Tests
-        run: |
-          adb devices
-          mvn clean test
+          script: |
+            'adb install src/test/resources/apps/base.apk'
+            'mvn clean test'
