@@ -48,7 +48,7 @@ jobs:
           profile: 'Nexus 6'
           target: google_apis
           arch: x86_64
-          emulator-options: 'no-window -gpu host -no-snapshot-load -noaudio -no-boot-anim'
+          emulator-options: 'no-window -no-snapshot-load -noaudio -no-boot-anim'
           script:
             adb install src/test/resources/apps/base.apk
             mvn clean test
