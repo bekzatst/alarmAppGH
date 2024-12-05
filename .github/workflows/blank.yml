@@ -48,6 +48,6 @@ jobs:
           profile: 'Nexus 6'
           target: google_apis
           arch: x86_64
-          script:
+          script: |
             adb install src/test/resources/apps/base.apk
             mvn clean test
