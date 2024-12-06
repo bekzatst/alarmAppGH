@@ -24,9 +24,9 @@ public class AppiumTest extends BaseTest {
         alarmScreen.clickFiveBtn();
         step("Click 0");
         alarmScreen.clickZeroBtn();
-        step("Click PM");
+        step("Click PM button");
         alarmScreen.clickPmBtn();
-        step("Set alarm");
+        step("Set alarm button");
         alarmScreen.clickSetBtn();
         step("Save alarm");
         alarmScreen.clickSaveBtn();
