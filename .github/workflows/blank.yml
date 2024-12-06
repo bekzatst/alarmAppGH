@@ -38,7 +38,7 @@ jobs:
           npm install -g appium@latest
           appium driver install uiautomator2
           appium plugin install images
-          appium --adb-exec-timeout 20000 &
+          appium &
 
       # Start an Android Emulator and Run Tests
       - name: Android Emulator Runner and Run Tests
